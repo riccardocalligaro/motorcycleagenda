@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MotorcycleAgenda</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="history">History</string>
+    <string name="interventions">Interventions</string>
+    <string name="reminders">Reminders</string>
+    <string name="settings">Settings</string>
+</resources>

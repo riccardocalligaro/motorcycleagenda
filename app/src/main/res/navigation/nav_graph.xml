@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashboardFragment">
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.riccardocalligaro.motorcycleagenda.features.dashboard.presentation.dashboard.DashboardFragment"
+        android:label="dashboard_fragment"
+        tools:layout="@layout/dashboard_fragment" >
+        <action
+            android:id="@+id/action_dashboardFragment_to_newVehicleFragment"
+            app:destination="@id/newVehicleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.riccardocalligaro.motorcycleagenda.features.history.HistoryFragment"
+        android:label="history_fragment"
+        tools:layout="@layout/history_fragment" />
+    <fragment
+        android:id="@+id/interventionsFragment"
+        android:name="com.riccardocalligaro.motorcycleagenda.features.interventions.InterventionsFragment"
+        android:label="interventions_fragment"
+        tools:layout="@layout/interventions_fragment" />
+    <fragment
+        android:id="@+id/remindersFragment"
+        android:name="com.riccardocalligaro.motorcycleagenda.features.reminders.RemindersFragment"
+        android:label="reminders_fragment"
+        tools:layout="@layout/reminders_fragment" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.riccardocalligaro.motorcycleagenda.features.settings.SettingsFragment"
+        android:label="settings_fragment"
+        tools:layout="@layout/settings_fragment" />
+    <fragment
+        android:id="@+id/newVehicleFragment"
+        android:name="com.riccardocalligaro.motorcycleagenda.features.dashboard.presentation.new_vehicle.NewVehicleFragment"
+        android:label="new_vehicle_fragment"
+        tools:layout="@layout/new_vehicle_fragment" />
+</navigation>
